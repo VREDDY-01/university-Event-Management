@@ -60,5 +60,9 @@ public class restController {
 	public List<Event> getAllEventsByDate(LocalDate date){
 		return eventService.getAllEventsByDate(date);
 	}
+	@GetMapping("vishnu")
+	public String getAllEventsByDate(){
+		return "Vishnu teja";
+	}
 
 }
